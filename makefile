@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-I. -w -g
-DEPS = hello.c
-OBJ = hello.o
+DEPS = greeter.h
+OBJ = hello.o greeter.o
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
